@@ -1,0 +1,149 @@
+.top{
+    padding-bottom: 20px;
+    width: 100%;
+    float: left;
+    background-color: white;
+    .container{
+        margin-top: 1%;
+        h1{
+            font-family: Bebas Neue;
+            color: #6c7c97;
+            font-size: 100px;
+        }
+        h4{
+            font-family: Bebas Neue;
+            color: #274072;
+            margin-top: -7%;
+            margin-left: 7.5%;
+        }
+        p{
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 60%;
+            text-align: justify;
+            margin-left: 14%;
+            margin-top: -5%;
+        }
+    }
+}
+
+.accordian{
+    width: 100%;
+    float: left;
+    background-color: #274072;
+    .header{
+        button{
+            color: #b0b4be;
+            font-weight: bold;
+            border-radius: 0;
+        }
+        button.active{
+            color: #274072;
+            background-color: #b0b4be;
+            text-decoration: underline;
+        }
+    }
+    .body{
+        .item1{
+            display: none;
+        }
+        .item1.active{
+            display: inline-block;
+        }
+        .item2{
+            display: none;
+        }
+        .item2.active{
+            display: inline-block;
+        }
+        .box{
+            position: absolute;
+            width: 0 auto;
+            padding: 10px;
+            h4{
+                padding-left: 20px;
+                color: #274072;
+                font-family: Bebas Neue;
+            }
+            .text{
+                td{
+                    padding: 0 20px;
+                }
+            }
+        }
+    }
+}
+
+.footer{
+    color: #b0b4be;
+    background-color: #274072;
+    .container{
+        .logo{
+            float: left;
+            h1 {
+                margin: 0;
+                font-size: 18px;
+            }
+        }
+        .copyright{
+            float: right;
+        }
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .top{
+        .container{
+            h1{
+                font-size: 60px;
+            }
+            h4{
+                margin-top: -16%;
+                margin-left: 14%;
+            }
+            p{
+                margin-top: -14%;
+                margin-left: 30%;
+            }
+        }
+    }
+        
+        .accordian{
+            .body{
+                .box{
+                   margin-left: 10%;
+                   margin-top: 5%;
+                }
+            }
+        }
+        .footer{
+            .copyright{
+                font-size: 10px;
+            }
+        }
+    }
+    
+
+    @media screen and (min-width: 768px) {
+        .top{
+            .container{
+                margin-left: 10%;
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+        .accordian{
+            .body{
+                .box{
+                   margin-left: 20%;
+                   margin-top: 20%;
+                }
+            }
+        }
+        .footer{
+            .copyright{
+                margin-left: 40%;
+            }
+        }
+    }

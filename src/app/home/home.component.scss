@@ -1,0 +1,50 @@
+.bg{
+    top: 0;
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    z-index: 1;
+    .logo {
+        float: left;
+        .img {
+            background-color: white;
+        }
+    }
+    
+    .nav {
+        float: right;
+        a {
+            color: white;
+            font-weight: bold;
+        }
+    }
+}
+
+.title{
+    position: absolute;
+    z-index: 1;
+    margin-top: 10%;
+    margin-left: 30%;
+    font-family: Bebas Neue;
+    h1{
+        margin: 0;
+    }
+    .gray{
+        color: #4d4d4d;
+    }
+    .blue {
+        color: #274072;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container{
+        margin: 10px 7%;
+    }
+
+    h1{
+        font-size: 130px;
+    }
+}

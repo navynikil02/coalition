@@ -1,0 +1,100 @@
+<div class="top">
+    <div class="container">
+        <h1>02.</h1>
+        <h4>CLIMB</h4>
+        <p>Cras scelerisque id quam sed dignissim Pellentesque urna nunc, 
+            gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue. 
+        </p>
+    </div>
+</div>
+
+<div class="accordian">
+    <div class="header text-center">
+        <button class="btn" (click)="button1()" [ngClass]="{'active':accordion.item1 === true}">MOUNTAIN 1</button>
+        <button class="btn" (click)="button2()" [ngClass]="{'active':accordion.item2 === true}">MOUNTAIN 2</button>
+    </div>
+
+    <div class="body">
+        <div class="item1" [ngClass]="{'active':accordion.item1 === true}">
+            <div class="box bg-light bg-opacity-50">
+                <h4>
+                    SCHEDULE
+                </h4>
+
+                <table class="text">
+                    <tr>
+                        <td>25 NOV 2016</td>
+                        <td>Losangels</td>
+                    </tr>
+                    <tr>
+                        <td>28 NOV 2016</td>
+                        <td>Losangels</td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td>18 DEC 2016</td>
+                        <td>Losangels</td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td>07 JAN 2016</td>
+                        <td>Losangels</td>
+                    </tr>
+                </table>
+            </div>
+
+            <img src="../../assets/images/t1.jpg" class="img-fluid">
+        </div>
+
+        <div class="item2" [ngClass]="{'active':accordion.item2 === true}">
+            <div class="box bg-light bg-opacity-50">
+                <h4>
+                    SCHEDULE
+                </h4>
+
+                <table class="text">
+                    <tr>
+                        <td>17 NOV 2016</td>
+                        <td>Losangels</td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td>13 DEC 2016</td>
+                        <td>Losangels</td>
+                    </tr>
+                    <tr>
+                        <td>28 DEC 2016</td>
+                        <td>Losangels</td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td>09 FEB 2016</td>
+                        <td>Losangels</td>
+                    </tr>
+                </table>
+            </div>
+
+            <img src="../../assets/images/t2.jpg" class="img-fluid">
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="container d-flex py-3">
+        <div class="logo d-flex" routerLink="">
+          <img class="img rounded-circle mx-2" width="50px" height="50px">
+          <div class="text">
+            <h1>
+              LOSANGLES
+            </h1>
+            <h1 class="blue">
+              MOUNTAINS
+            </h1>
+          </div>
+        </div>
+
+        <div class="copyright">
+            <span>COPYRIGHT 2016. ALL RIGHTS RESERVED.</span>
+        </div>
+    </div>
+</div>
